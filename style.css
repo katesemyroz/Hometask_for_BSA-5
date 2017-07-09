@@ -15,7 +15,7 @@ html,body {
 	position: fixed;
 	top:0;
 	left: 0;
-	border-bottom-style: solid;
+	border-bottom: 1px solid;
 }
 
 #header img{
@@ -51,13 +51,11 @@ html,body {
 #center{
 	width: 100%;
 	display: inline-flex;
-	overflow: hidden;
 }
 
 #left_menu{
 	margin-top: 90px;
-	width: 300px;
-	background-color: rgb(201,205,208);
+	width: 25%;
 	display: inline-block;
 
 }
@@ -82,21 +80,28 @@ html,body {
 
 #first_screen{
 	height: 100vh;
-	background-color: rgb(34,33,28);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: url("http://samsen.wpengine.com/wp-content/uploads/2015/05/fotkas.jpg"); 
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-/*#first_screen img{
-	max-width: 1100px;
-	overflow: hidden;
-}*/
-
 #second_screen{
-	background-color: orange;
-	height: 800px;
+	background-color: rgb(243,239,224);
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#second_screen img{
+	margin: 15px;
+}
+
+#footer{
+	border-top: 1px solid;
+	background-color: rgb(67,66,66);
+	color: white;
+	text-align: center;
 }
