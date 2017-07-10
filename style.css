@@ -22,11 +22,6 @@ html,body {
 	width: 25%;
 }
 
-#header img{
-	width:60px;
-	height: 60px;
-}
-
 .header_elem{
 	display: inline-block;
 	text-align: center;
@@ -34,6 +29,8 @@ html,body {
 }
 
 #logo{
+	width:60px;
+	height: 60px;
 	margin: 5px 25px;
 }
 
@@ -52,6 +49,39 @@ html,body {
 	margin: auto 10px;
 }
 
+#hamburger_button{
+	background: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png");
+	background-size: cover;
+	border-width: 0px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 99999px;
+}
+
+#cross_button{
+	background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-128.png");
+	background-size: cover;
+	border-width: 0px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 99999px;
+}
+
+#header_hamburger_menu{
+	list-style:none;
+    position:absolute;
+    left:-9999px;
+    opacity: 0;
+    -webkit-transition:0.25s linear opacity;
+}
+
+#header_hamburger_menu a{
+    white-space:nowrap;
+    display:block;
+}
+
 #center{
 	width: 100%;
 	display: inline-flex;
@@ -62,6 +92,10 @@ html,body {
 	width: 25%;
 	display: inline-block;
 
+}
+
+#left_menu hr{
+	width: 90%;
 }
 
 .left_menu_elem{
@@ -117,41 +151,66 @@ html,body {
 	
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 805px) and (max-width: 991px){
 	#logo_area{
 		width: 25%;
 	}
-	
 	#header_menu{
 		width: 35%;
 	}
 	#search input{
 		width: 250px;
 	}
-	
+		#left_menu{
+		width:90px;
+		margin-top: 90px;
+	}
+	.left_menu_elem{
+		margin: 15px 5px;
+		justify-content: center;
+	}
+  	.left_menu_elem img{
+    	width:50px;
+    	height:50px;
+  	}
+	.left_menu_elem p{
+		display: none;
+	}
 }
 
-@media (max-width: 767px){
+@media (max-width: 804px){
 	#header{
 		padding: 0px;
 	}
-
 	#logo{
-		width: 20px;
-		height: 20px;
+		width: 40px;
+		height: 40px;
 		margin: 0px;
 	}
-
 	#search input{
 		width: 150px;
 	}
-
 	#search img{
+		width: 20px;
+		height: 20px;
+	}
+	#hamburger_button{
+		position: static;
 		width: 30px;
 		height: 30px;
 	}
-
 	#header_menu{
+		display: none;
+	}
+	#left_menu{
+		width:60px;
+		margin-top: 60px;
+	}
+	.left_menu_elem{
+		margin: 15px 5px;
+		justify-content: center;
+	}
+	.left_menu_elem p{
 		display: none;
 	}
 }
