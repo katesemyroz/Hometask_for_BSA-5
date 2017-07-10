@@ -5,6 +5,11 @@ html,body {
   height: 100%;
 }
 
+a{
+	color: black;
+    text-decoration: none;
+}
+
 #header{
 	background-color: white;
 	display: inline-flex;
@@ -29,9 +34,9 @@ html,body {
 }
 
 #logo{
-	width:60px;
-	height: 60px;
-	margin: 5px 25px;
+	width: 70px;
+	height: 70px;
+	margin: 0px 25px;
 }
 
 #search input{
@@ -69,15 +74,17 @@ html,body {
 	right: 99999px;
 }
 
-#header_hamburger_menu{
+#hamburger_menu{
 	list-style:none;
-    position:absolute;
-    left:-9999px;
-    opacity: 0;
-    -webkit-transition:0.25s linear opacity;
+	margin-top: 90px;
 }
 
-#header_hamburger_menu a{
+#hamburger_menu ul{
+	list-style-type: none;
+
+}
+
+#hamburger_menu a{
     white-space:nowrap;
     display:block;
 }
@@ -99,7 +106,7 @@ html,body {
 }
 
 .left_menu_elem{
-	margin: 10px 0px 10px 20px;
+	margin: 15px 0px 10px 40px;
 	display:flex;
 }
 
@@ -130,8 +137,11 @@ html,body {
 	justify-content: space-around;
 }
 
+
+
 #second_screen img{
 	margin: 15px;
+	width: 300px;
 }
 
 #footer{
@@ -155,14 +165,18 @@ html,body {
 	#logo_area{
 		width: 25%;
 	}
+	#logo{
+		width: 60px;
+		height: 60px;
+	}
 	#header_menu{
 		width: 35%;
 	}
 	#search input{
 		width: 250px;
 	}
-		#left_menu{
-		width:90px;
+	#left_menu{
+		width:110px;
 		margin-top: 90px;
 	}
 	.left_menu_elem{
@@ -178,14 +192,58 @@ html,body {
 	}
 }
 
-@media (max-width: 804px){
+@media (min-width: 500px) and (max-width: 804px){
 	#header{
 		padding: 0px;
+	}
+	#logo_area{
+		width: 70px;
+	}
+	#logo{
+		width: 50px;
+		height: 50px;
+		margin: 5px 10px;
+	}
+	#search input{
+		width: 200px;
+	}
+	#search img{
+		width: 30px;
+		height: 30px;
+	}
+	#hamburger_button, #cross_button{
+		position: static;
+		width: 35px;
+		height: 35px;
+		margin: 5px 10px; 
+	}
+	#header_menu{
+		display: none;
+	}
+	#left_menu{
+		width:80px;
+		margin-top: 60px;
+	}
+	.left_menu_elem{
+		margin: 10px 5px;
+		justify-content: center;
+	}
+	.left_menu_elem p{
+		display: none;
+	}
+}
+
+@media (max-width: 499px){
+	#header{
+		padding: 0px;
+	}
+	#logo_area{
+		width: 70px;
 	}
 	#logo{
 		width: 40px;
 		height: 40px;
-		margin: 0px;
+		margin: 5px 10px;
 	}
 	#search input{
 		width: 150px;
@@ -194,10 +252,11 @@ html,body {
 		width: 20px;
 		height: 20px;
 	}
-	#hamburger_button{
+	#hamburger_button, #cross_button{
 		position: static;
 		width: 30px;
 		height: 30px;
+		margin: 5px 10px; 
 	}
 	#header_menu{
 		display: none;
@@ -207,7 +266,7 @@ html,body {
 		margin-top: 60px;
 	}
 	.left_menu_elem{
-		margin: 15px 5px;
+		margin: 10px 5px;
 		justify-content: center;
 	}
 	.left_menu_elem p{
