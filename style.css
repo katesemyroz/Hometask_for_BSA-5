@@ -18,6 +18,10 @@ html,body {
 	border-bottom: 1px solid;
 }
 
+#logo_area, #header_menu{
+	width: 25%;
+}
+
 #header img{
 	width:60px;
 	height: 60px;
@@ -30,7 +34,7 @@ html,body {
 }
 
 #logo{
-	margin: 5px 165px 5px 25px;
+	margin: 5px 25px;
 }
 
 #search input{
@@ -80,9 +84,6 @@ html,body {
 
 #first_screen{
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: url("http://samsen.wpengine.com/wp-content/uploads/2015/05/fotkas.jpg"); 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -92,7 +93,7 @@ html,body {
 	background-color: rgb(243,239,224);
 	display: inline-flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 #second_screen img{
@@ -104,4 +105,53 @@ html,body {
 	background-color: rgb(67,66,66);
 	color: white;
 	text-align: center;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	#logo_area, #header_menu{
+		width: 30%;
+	}
+	#search input{
+		width: 300px;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#logo_area{
+		width: 25%;
+	}
+	
+	#header_menu{
+		width: 35%;
+	}
+	#search input{
+		width: 250px;
+	}
+	
+}
+
+@media (max-width: 767px){
+	#header{
+		padding: 0px;
+	}
+
+	#logo{
+		width: 20px;
+		height: 20px;
+		margin: 0px;
+	}
+
+	#search input{
+		width: 150px;
+	}
+
+	#search img{
+		width: 30px;
+		height: 30px;
+	}
+
+	#header_menu{
+		display: none;
+	}
 }
