@@ -74,19 +74,25 @@ a{
 	right: 99999px;
 }
 
-#hamburger_menu{
-	list-style:none;
-	margin-top: 90px;
-}
-
 #hamburger_menu ul{
 	list-style-type: none;
+	padding-left: 0px;
+}
 
+#hamburger_menu li{
+	padding: 10px 0px;
+	border-bottom: 1px solid;
+	transition: background 2s;
+}
+
+#hamburger_menu li:hover{
+	background: rgb(201,205,208);
 }
 
 #hamburger_menu a{
     white-space:nowrap;
     display:block;
+    text-align: center;
 }
 
 #center{
@@ -95,7 +101,7 @@ a{
 }
 
 #left_menu{
-	margin-top: 90px;
+	margin-top: 91px;
 	width: 25%;
 	display: inline-block;
 
@@ -103,12 +109,19 @@ a{
 
 #left_menu hr{
 	width: 90%;
+	margin: 0px auto;
 }
 
 .left_menu_elem{
-	margin: 15px 0px 10px 40px;
+	padding: 15px 0px 10px 40px;
 	display:flex;
+	transition: background 2s;
 }
+
+.left_menu_elem:hover{
+	background: rgb(201,205,208);
+}
+
 
 .left_menu_elem img{
 	width: 40px;
@@ -169,18 +182,18 @@ a{
 		width: 60px;
 		height: 60px;
 	}
-	#header_menu{
-		width: 35%;
-	}
 	#search input{
 		width: 250px;
 	}
+	#header_menu{
+		width: 35%;
+	}
 	#left_menu{
-		width:110px;
-		margin-top: 90px;
+		width:95px;
+		margin-top: 81px;
 	}
 	.left_menu_elem{
-		margin: 15px 5px;
+		padding: 15px 5px;
 		justify-content: center;
 	}
   	.left_menu_elem img{
@@ -211,21 +224,24 @@ a{
 		width: 30px;
 		height: 30px;
 	}
+	#header_menu{
+		display: none;
+	}
 	#hamburger_button, #cross_button{
 		position: static;
 		width: 35px;
 		height: 35px;
 		margin: 5px 10px; 
 	}
-	#header_menu{
-		display: none;
+	#hamburger_menu{
+		margin-top: 61px;
 	}
 	#left_menu{
-		width:80px;
-		margin-top: 60px;
+		width:70px;
+		margin-top: 61px;
 	}
 	.left_menu_elem{
-		margin: 10px 5px;
+		padding: 10px 5px;
 		justify-content: center;
 	}
 	.left_menu_elem p{
@@ -252,21 +268,24 @@ a{
 		width: 20px;
 		height: 20px;
 	}
+	#header_menu{
+		display: none;
+	}
 	#hamburger_button, #cross_button{
 		position: static;
 		width: 30px;
 		height: 30px;
 		margin: 5px 10px; 
 	}
-	#header_menu{
-		display: none;
+	#hamburger_menu{
+		margin-top: 51px;
 	}
 	#left_menu{
-		width:60px;
-		margin-top: 60px;
+		width: 60px;
+		margin-top: 51px;
 	}
 	.left_menu_elem{
-		margin: 10px 5px;
+		padding: 10px 5px;
 		justify-content: center;
 	}
 	.left_menu_elem p{
