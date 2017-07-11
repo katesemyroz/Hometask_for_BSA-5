@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC');
+
 html,body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+	font-family: 'Cormorant SC', serif;
+	font-weight: bold;
+	font-size: 14pt;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
 a{
@@ -24,7 +29,7 @@ a{
 }
 
 #logo_area, #header_menu{
-	width: 25%;
+	width: 27%;
 }
 
 .header_elem{
@@ -48,6 +53,10 @@ a{
 #search img{
 	width:40px;
 	height: 40px;
+}
+
+#header_menu{
+	font-size: 13pt;
 }
 
 #header_menu p{
@@ -74,9 +83,17 @@ a{
 	right: 99999px;
 }
 
+#hamburger_menu{
+	position: absolute;
+	left: 99999px;
+	width: 100%;
+	background-color: white;
+}
+
 #hamburger_menu ul{
 	list-style-type: none;
 	padding-left: 0px;
+	margin: 0px;
 }
 
 #hamburger_menu li{
@@ -165,8 +182,13 @@ a{
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
+	html,body,#header_menu {
+    	font-family: 'Cormorant SC', serif;
+    	font-weight: bold;
+    	font-size: 12pt;
+	}
 	#logo_area, #header_menu{
-		width: 30%;
+		width: 32%;
 	}
 	#search input{
 		width: 300px;
@@ -174,7 +196,12 @@ a{
 	
 }
 
-@media (min-width: 805px) and (max-width: 991px){
+@media (min-width: 811px) and (max-width: 991px){
+	html,body,#header_menu {
+  		font-family: 'Cormorant SC', serif;
+    	font-weight: bold;
+    	font-size: 11pt;
+    }
 	#logo_area{
 		width: 25%;
 	}
@@ -205,7 +232,7 @@ a{
 	}
 }
 
-@media (min-width: 500px) and (max-width: 804px){
+@media (min-width: 500px) and (max-width: 810px){
 	#header{
 		padding: 0px;
 	}
@@ -218,7 +245,7 @@ a{
 		margin: 5px 10px;
 	}
 	#search input{
-		width: 200px;
+		width: 250px;
 	}
 	#search img{
 		width: 30px;
@@ -233,7 +260,8 @@ a{
 		height: 35px;
 		margin: 5px 10px; 
 	}
-	#hamburger_menu{
+	#hamburger_menu{ 
+		left: 0px;
 		margin-top: 61px;
 	}
 	#left_menu{
@@ -278,6 +306,7 @@ a{
 		margin: 5px 10px; 
 	}
 	#hamburger_menu{
+		left: 0px;
 		margin-top: 51px;
 	}
 	#left_menu{
