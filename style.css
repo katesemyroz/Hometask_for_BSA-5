@@ -15,6 +15,15 @@ a{
     text-decoration: none;
 }
 
+@keyframes add_font_shadow {
+    0%, 100% {}
+	50% {text-shadow: 2px 2px 8px rgb(106,86,62);}
+}
+
+p:hover{
+	animation: add_font_shadow 2s infinite;
+}
+
 #header{
 	background-color: white;
 	display: inline-flex;
@@ -167,18 +176,19 @@ a{
 	justify-content: space-around;
 }
 
-
-
 #second_screen img{
 	margin: 15px;
-	width: 300px;
+	width: 270px;
 }
+
 
 #footer{
 	border-top: 1px solid;
 	background-color: rgb(67,66,66);
 	color: white;
 	text-align: center;
+	font-size: 13px;
+	font-weight: normal;
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
@@ -192,6 +202,12 @@ a{
 	}
 	#search input{
 		width: 300px;
+	}
+	#second_screen div{
+		width: 45%;
+	}
+	#second_screen img{
+		width: 100%;
 	}
 	
 }
@@ -229,6 +245,12 @@ a{
   	}
 	.left_menu_elem p{
 		display: none;
+	}
+	#second_screen div{
+		width: 45%;
+	}
+	#second_screen img{
+		width: 100%;
 	}
 }
 
@@ -275,6 +297,12 @@ a{
 	.left_menu_elem p{
 		display: none;
 	}
+	#second_screen div{
+		text-align: center;
+	}
+	#second_screen img{
+		width: 70%;
+	}
 }
 
 @media (max-width: 499px){
@@ -319,5 +347,11 @@ a{
 	}
 	.left_menu_elem p{
 		display: none;
+	}
+	#second_screen div{
+		text-align: center;
+	}
+	#second_screen img{
+		width: 80%;
 	}
 }
