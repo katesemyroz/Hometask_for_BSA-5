@@ -108,6 +108,10 @@ p:hover{
 #hamburger_menu li{
 	padding: 10px 0px;
 	border-bottom: 1px solid;
+	-webkit-transition:background 2s;
+	-moz-transition:background 2s;
+	-ms-transition:background 2s;
+	-o-transition:background 2s;
 	transition: background 2s;
 }
 
@@ -141,6 +145,10 @@ p:hover{
 .left_menu_elem{
 	padding: 15px 0px 10px 40px;
 	display:flex;
+	-webkit-transition:background 2s;
+	-moz-transition:background 2s;
+	-ms-transition:background 2s;
+	-o-transition:background 2s;
 	transition: background 2s;
 }
 
